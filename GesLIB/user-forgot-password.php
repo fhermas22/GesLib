@@ -35,7 +35,7 @@ echo "<script>alert('Email id or Mobile no is invalid');</script>";
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Password Recovery </title>
+    <title>GesLib | Mot de Passe Oublié </title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -66,7 +66,7 @@ return true;
 <div class="container">
 <div class="row pad-botm">
 <div class="col-md-12">
-<h4 class="header-line">User Password Recovery</h4>
+<h4 class="header-line">RÉCUPÉRATION MOT DE PASSE LECTEUR</h4>
 </div>
 </div>
              
@@ -75,33 +75,33 @@ return true;
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
 <div class="panel panel-info">
 <div class="panel-heading">
- LOGIN FORM
+ Formulaire Connexion
 </div>
 <div class="panel-body">
 <form role="form" name="chngpwd" method="post" onSubmit="return valid();">
 
 <div class="form-group">
-<label>Enter Reg Email id</label>
+<label>Entrer Email Existant</label>
 <input class="form-control" type="email" name="email" required autocomplete="off" />
 </div>
 
 <div class="form-group">
-<label>Enter Reg Mobile No</label>
+<label>Entrer Numéro de Téléphone Existant</label>
 <input class="form-control" type="text" name="mobile" required autocomplete="off" />
 </div>
 
 <div class="form-group">
-<label>Password</label>
+<label>Mot de Passe</label>
 <input class="form-control" type="password" name="newpassword" required autocomplete="off"  />
 </div>
 
 <div class="form-group">
-<label>ConfirmPassword</label>
+<label>Confirmer Mot de Passe</label>
 <input class="form-control" type="password" name="confirmpassword" required autocomplete="off"  />
 </div>
 
 
- <button type="submit" name="change" class="btn btn-info">Chnage Password</button> | <a href="index.php">Login</a>
+ <button type="submit" name="change" class="btn btn-info">Changer Mot de Passe</button> | <a href="index.php">Connexion</a>
 </form>
  </div>
 </div>

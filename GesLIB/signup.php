@@ -50,7 +50,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Online Library Management System | Student Signup</title>
+    <title>GesLib | Inscription Lecteur</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -96,7 +96,7 @@ error:function (){}
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">User Signup</h4>
+                <h4 class="header-line">FORMULAIRE D'INSCRIPTION LECTEUR</h4>
                 
                             </div>
 
@@ -106,38 +106,38 @@ error:function (){}
 <div class="col-md-9 col-md-offset-1">
                <div class="panel panel-danger">
                         <div class="panel-heading">
-                           SINGUP FORM
+                           INSCRIPTION
                         </div>
                         <div class="panel-body">
                             <form name="signup" method="post" onSubmit="return valid();">
 <div class="form-group">
-<label>Enter Full Name</label>
+<label>Entrer votre Nom Complet</label>
 <input class="form-control" type="text" name="fullanme" autocomplete="off" required />
 </div>
 
 
 <div class="form-group">
-<label>Mobile Number :</label>
+<label>Numéro de Téléphone :</label>
 <input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
 </div>
                                         
 <div class="form-group">
-<label>Enter Email</label>
+<label>Entrer votre Email</label>
 <input class="form-control" type="email" name="email" id="emailid" onBlur="checkAvailability()"  autocomplete="off" required  />
    <span id="user-availability-status" style="font-size:12px;"></span> 
 </div>
 
 <div class="form-group">
-<label>Enter Password</label>
+<label>Entrer un Mot de Passe</label>
 <input class="form-control" type="password" name="password" autocomplete="off" required  />
 </div>
 
 <div class="form-group">
-<label>Confirm Password </label>
+<label>Confirmer le Mot de Passe </label>
 <input class="form-control"  type="password" name="confirmpassword" autocomplete="off" required  />
 </div>
                              
-<button type="submit" name="signup" class="btn btn-danger" id="submit">Register Now </button>
+<button type="submit" name="signup" class="btn btn-danger" id="submit">S'inscrire Maintenant </button>
 
                                     </form>
                             </div>

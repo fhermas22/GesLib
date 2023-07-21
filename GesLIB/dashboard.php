@@ -14,7 +14,7 @@ else{?>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | User Dash Board</title>
+    <title>GesLib | Tableau de Bord Lecteur</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -33,7 +33,7 @@ else{?>
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">User DASHBOARD</h4>
+                <h4 class="header-line">TABLEAU DE BORD LECTEUR</h4>
                 
                             </div>
 
@@ -54,7 +54,7 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 $listdbooks=$query->rowCount();
 ?>
 <h3><?php echo htmlentities($listdbooks);?></h3>
-Books Listed
+Livres Répertoriés
 </div></div></a>
              
                <div class="col-md-4 col-sm-4 col-xs-6">
@@ -73,7 +73,7 @@ $returnedbooks=$query2->rowCount();
 ?>
 
                             <h3><?php echo htmlentities($returnedbooks);?></h3>
-                          Books Not Returned Yet
+                          Livres Pas Encore Rendus
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@ $returnedbooks=$query2->rowCount();
  <div class="alert alert-success back-widget-set text-center">
  <i class="fa fa-book fa-5x"></i>
       <h3>&nbsp;</h3>
-Issued Books
+Livres Émis
 </div></div></a>
 
 
