@@ -1,25 +1,25 @@
-How to run this Library Management System Project
+Comment exécuter ce projet de Système de Gestion de Bibliothèque
 
-1. Download and Unzip file on your local system copy library.
-2. Put library folder inside�root directory
+1. Téléchargez et décompressez le fichier sur la bibliothèque de copie de votre système local.
+2. Placez le dossier de la bibliothèque dans le répertoire racine
 
-Database Configuration
+Configuration de la base de données
 
-Open phpmyadmin
-Create Database�library
-Import database library.sql (available inside zip package)
+Ouvrez phpmyadmin
+Créer une bibliothèque de base de données
+Importer la base de données library.sql (disponible dans le package zip)
 
-For User
+Pour l'utilisateur
 
-Open Your browser put inside browser �http://localhost/library�
-Login Details for user:�
-Username: test@gmail.com
-Password: Test@123
+Ouvrez votre navigateur mis à l'intérieur du navigateur "http://localhost/library"
+Détails de connexion pour l'utilisateur :�
+Nom d'utilisateur : test@gmail.com
+Mot de passe : Test@123
 
-For Admin Panel
+Pour le panneau d'administration
 
-Open Your browser put inside browser �http://localhost/library/admin�
-Login Details for admin :�
-Username: admin
-Password:Test@123
+Ouvrez votre navigateur mis à l'intérieur du navigateur "http://localhost/library/admin"
+Détails de connexion pour l'administrateur :�
+Nom d'utilisateur : admin
+Mot de passe :Test@123
 
