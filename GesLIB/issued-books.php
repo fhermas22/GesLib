@@ -18,7 +18,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System |  Issued Books</title>
+    <title>GesLib | Livres Émis</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -39,7 +39,7 @@ else{
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Issued Books</h4>
+                <h4 class="header-line">Gestion des Livres Émis</h4>
     </div>
     
 
@@ -48,7 +48,7 @@ else{
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                          Issued Books 
+                          Livres Émis 
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -56,11 +56,11 @@ else{
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Book Name</th>
-                                            <th>ISBN </th>
-                                            <th>Issued Date</th>
-                                            <th>Return Date</th>
-                                            <th>Fine in(USD)</th>
+                                            <th>Nom du livre</th>
+                                            <th>Numéro ISBN </th>
+                                            <th>Date d'émission</th>
+                                            <th>Date de retour</th>
+                                            <th>Montant en (FCFA)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -84,7 +84,7 @@ foreach($results as $result)
                                             <td class="center"><?php if($result->ReturnDate=="")
                                             {?>
                                             <span style="color:red">
-                                             <?php   echo htmlentities("Not Return Yet"); ?>
+                                             <?php   echo htmlentities("Pas encore retourné"); ?>
                                                 </span>
                                             <?php } else {
                                             echo htmlentities($result->ReturnDate);
