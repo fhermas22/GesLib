@@ -41,7 +41,7 @@ header('location:manage-issued-books.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Issue a new Book</title>
+    <title>Livres Émis | Émission d'un Nouveau Livre</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -99,7 +99,7 @@ error:function (){}
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Issue a New Book</h4>
+                <h4 class="header-line">Émettre un Nouveau Livre</h4>
                 
                             </div>
 
@@ -108,13 +108,13 @@ error:function (){}
 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1">
 <div class="panel panel-info">
 <div class="panel-heading">
-Issue a New Book
+Émettre un Nouveau Livre
 </div>
 <div class="panel-body">
 <form role="form" method="post">
 
 <div class="form-group">
-<label>Srtudent id<span style="color:red;">*</span></label>
+<label>Id Lecteur<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="studentid" id="studentid" onBlur="getstudent()" autocomplete="off"  required />
 </div>
 
@@ -127,14 +127,14 @@ Issue a New Book
 
 
 <div class="form-group">
-<label>ISBN Number or Book Title<span style="color:red;">*</span></label>
+<label>Numéro ISBN ou Titre du Livre<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="booikid" id="bookid" onBlur="getbook()"  required="required" />
 </div>
 
  <div class="form-group" id="get_book_name">
 
  </div>
-<button type="submit" name="issue" id="submit" class="btn btn-info">Issue Book </button>
+<button type="submit" name="issue" id="submit" class="btn btn-info">Émettre le Livre </button>
 
                                     </form>
                             </div>
