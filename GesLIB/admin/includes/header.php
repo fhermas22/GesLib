@@ -50,9 +50,9 @@
                             </li>
 
                            <li>
-                                <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Livres Publiés <i class="fa fa-angle-down"></i></a>
+                                <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Livres Émis <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="issue-book.php">Publier un nouveau livre</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="issue-book.php">Émettre un nouveau livre</a></li>
                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-issued-books.php">Gérer les livres émis</a></li>
                                 </ul>
                             </li>

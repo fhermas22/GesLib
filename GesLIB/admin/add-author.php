@@ -36,7 +36,7 @@ header('location:manage-authors.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Add Author</title>
+    <title>GesLib | Ajouter un auteur</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -56,7 +56,7 @@ header('location:manage-authors.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Add Author</h4>
+                <h4 class="header-line">Ajouter un Auteur</h4>
                 
                             </div>
 
@@ -65,16 +65,16 @@ header('location:manage-authors.php');
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
 <div class="panel panel-info">
 <div class="panel-heading">
-Author Info
+Informations Auteur
 </div>
 <div class="panel-body">
 <form role="form" method="post">
 <div class="form-group">
-<label>Author Name</label>
+<label>Nom Auteur</label>
 <input class="form-control" type="text" name="author" autocomplete="off"  required />
 </div>
 
-<button type="submit" name="create" class="btn btn-info">Add </button>
+<button type="submit" name="create" class="btn btn-info">Ajouter </button>
 
                                     </form>
                             </div>

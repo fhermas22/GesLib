@@ -61,7 +61,7 @@ echo "<script>window.location.href='manage-books.php'</script>";
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Add Book</title>
+    <title>GesLib | Ajouter un Livre</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -95,7 +95,7 @@ error:function (){}
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Add Book</h4>
+                <h4 class="header-line">Ajouter un Livre</h4>
                 
                             </div>
 
@@ -104,23 +104,23 @@ error:function (){}
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="panel panel-info">
 <div class="panel-heading">
-Book Info
+Informations Livre
 </div>
 <div class="panel-body">
 <form role="form" method="post" enctype="multipart/form-data">
 
 <div class="col-md-6">   
 <div class="form-group">
-<label>Book Name<span style="color:red;">*</span></label>
+<label>Nom Livre<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="bookname" autocomplete="off"  required />
 </div>
 </div>
 
 <div class="col-md-6">  
 <div class="form-group">
-<label> Category<span style="color:red;">*</span></label>
+<label> Catégorie<span style="color:red;">*</span></label>
 <select class="form-control" name="category" required="required">
-<option value=""> Select Category</option>
+<option value="">Choisir une catégorie</option>
 <?php 
 $status=1;
 $sql = "SELECT * from  tblcategory where Status=:status";
@@ -140,9 +140,9 @@ foreach($results as $result)
 
 <div class="col-md-6">  
 <div class="form-group">
-<label> Author<span style="color:red;">*</span></label>
+<label> Auteur<span style="color:red;">*</span></label>
 <select class="form-control" name="author" required="required">
-<option value=""> Select Author</option>
+<option value="">Sélectionner l'auteur</option>
 <?php 
 
 $sql = "SELECT * from  tblauthors ";
@@ -161,26 +161,26 @@ foreach($results as $result)
 
 <div class="col-md-6">  
 <div class="form-group">
-<label>ISBN Number<span style="color:red;">*</span></label>
+<label>Numéro ISBN<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="isbn" id="isbn" required="required" autocomplete="off" onBlur="checkisbnAvailability()"  />
-<p class="help-block">An ISBN is an International Standard Book Number.ISBN Must be unique</p>
+<p class="help-block">Un ISBN est un numéro international normalisé du livre. L'ISBN doit être unique</p>
          <span id="isbn-availability-status" style="font-size:12px;"></span>
 </div></div>
 
 <div class="col-md-6">  
  <div class="form-group">
- <label>Price<span style="color:red;">*</span></label>
+ <label>Prix<span style="color:red;">*</span></label>
  <input class="form-control" type="text" name="price" autocomplete="off"   required="required" />
  </div>
 </div>
 
 <div class="col-md-6">  
  <div class="form-group">
- <label>Book Picture<span style="color:red;">*</span></label>
+ <label>Image du livre<span style="color:red;">*</span></label>
  <input class="form-control" type="file" name="bookpic" autocomplete="off"   required="required" />
  </div>
     </div>
-<button type="submit" name="add" id="add" class="btn btn-info">Submit </button>
+<button type="submit" name="add" id="add" class="btn btn-info">Soumettre </button>
  </div>
 </div>
                             </div>
