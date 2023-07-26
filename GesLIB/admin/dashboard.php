@@ -17,7 +17,7 @@ else{?>
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Online Library Management System | Admin Dash Board</title>
+    <title>GesLib | Tableau de Bord Administrateur</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -36,7 +36,7 @@ else{?>
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">ADMIN DASHBOARD</h4>
+                <h4 class="header-line">TABLEAU DE BORD ADMINISTRATEUR</h4>
                 
                             </div>
 
@@ -55,7 +55,7 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 $listdbooks=$query->rowCount();
 ?>
 <h3><?php echo htmlentities($listdbooks);?></h3>
-Books Listed
+Livres Répertoriés
 </div></div></a>
 
             
@@ -73,7 +73,7 @@ $returnedbooks=$query2->rowCount();
 ?>
 
                             <h3><?php echo htmlentities($returnedbooks);?></h3>
-                          Books Not Returned Yet
+                            Livres Pas Encore Rendus
                         </div>
                     </div>
                 </a>
@@ -90,7 +90,7 @@ $results3=$query3->fetchAll(PDO::FETCH_OBJ);
 $regstds=$query3->rowCount();
 ?>
                             <h3><?php echo htmlentities($regstds);?></h3>
-                           Registered Users
+                            Utilisateurs Enregistrés
                         </div>
                     </div></a>
 
@@ -107,7 +107,7 @@ $results4=$query4->fetchAll(PDO::FETCH_OBJ);
 $listdathrs=$query4->rowCount();
 ?>
 <h3><?php echo htmlentities($listdathrs);?></h3>
-Authors Listed
+Auteurs Répertoriés
 </div>
 </div></a>
 </div>
@@ -131,7 +131,7 @@ $listdcats=$query5->rowCount();
 ?>
 
                             <h3><?php echo htmlentities($listdcats);?> </h3>
-                           Listed Categories
+                            Catégories Listées
                         </div>
                     </div></a>
              
