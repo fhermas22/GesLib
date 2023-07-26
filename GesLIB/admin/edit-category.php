@@ -32,7 +32,7 @@ header('location:manage-categories.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Edit Categories</title>
+    <title>GesLib | Modifier les Catégories</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -52,7 +52,7 @@ header('location:manage-categories.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Edit category</h4>
+                <h4 class="header-line">Modifier une Catégorie</h4>
                 
                             </div>
 
@@ -61,7 +61,7 @@ header('location:manage-categories.php');
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
 <div class="panel panel-info">
 <div class="panel-heading">
-Category Info
+Informations de la Catégorie
 </div>
  
 <div class="panel-body">
@@ -79,20 +79,20 @@ foreach($results as $result)
 {               
   ?> 
 <div class="form-group">
-<label>Category Name</label>
+<label></label>
 <input class="form-control" type="text" name="category" value="<?php echo htmlentities($result->CategoryName);?>" required />
 </div>
 <div class="form-group">
-<label>Status</label>
+<label>Statut</label>
 <?php if($result->Status==1) {?>
  <div class="radio">
 <label>
-<input type="radio" name="status" id="status" value="1" checked="checked">Active
+<input type="radio" name="status" id="status" value="1" checked="checked">Actif
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="status" id="status" value="0">Inactive
+<input type="radio" name="status" id="status" value="0">Inactif
 </label>
 </div>
 <?php } else { ?>
@@ -103,13 +103,13 @@ foreach($results as $result)
 </div>
  <div class="radio">
 <label>
-<input type="radio" name="status" id="status" value="1">Active
+<input type="radio" name="status" id="status" value="1">Actif
 </label>
-</div
+</div>
 <?php } ?>
 </div>
 <?php }} ?>
-<button type="submit" name="update" class="btn btn-info">Update </button>
+<button type="submit" name="update" class="btn btn-info">Modifier </button>
 
                                     </form>
                             </div>

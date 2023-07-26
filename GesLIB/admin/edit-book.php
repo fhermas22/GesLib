@@ -37,7 +37,7 @@ echo "<script>window.location.href='manage-books.php'</script>";
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Edit Book</title>
+    <title>GesLib | Éditer un livre</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -56,7 +56,7 @@ echo "<script>window.location.href='manage-books.php'</script>";
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Add Book</h4>
+                <h4 class="header-line">Modifier un Livre</h4>
                 
                             </div>
 
@@ -65,7 +65,7 @@ echo "<script>window.location.href='manage-books.php'</script>";
 <div class="col-md12 col-sm-12 col-xs-12">
 <div class="panel panel-info">
 <div class="panel-heading">
-Book Info
+Informations du Livre
 </div>
 <div class="panel-body">
 <form role="form" method="post">
@@ -84,20 +84,20 @@ foreach($results as $result)
 
 <div class="col-md-6">
 <div class="form-group">
-<label>Book Image</label>
+<label>Image du Livre</label>
 <img src="bookimg/<?php echo htmlentities($result->bookImage);?>" width="100">
-<a href="change-bookimg.php?bookid=<?php echo htmlentities($result->bookid);?>">Change Book Image</a>
+<a href="change-bookimg.php?bookid=<?php echo htmlentities($result->bookid);?>">Changer l'image du livre</a>
 </div></div>
 
 <div class="col-md-6">
 <div class="form-group">
-<label>Book Name<span style="color:red;">*</span></label>
+<label>Nom du Livre<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="bookname" value="<?php echo htmlentities($result->BookName);?>" required />
 </div></div>
 
 <div class="col-md-6">
 <div class="form-group">
-<label> Category<span style="color:red;">*</span></label>
+<label> Catégorie<span style="color:red;">*</span></label>
 <select class="form-control" name="category" required="required">
 <option value="<?php echo htmlentities($result->cid);?>"> <?php echo htmlentities($catname=$result->CategoryName);?></option>
 <?php 
@@ -125,7 +125,7 @@ else
 
 <div class="col-md-6">
 <div class="form-group">
-<label> Author<span style="color:red;">*</span></label>
+<label> Auteur<span style="color:red;">*</span></label>
 <select class="form-control" name="author" required="required">
 <option value="<?php echo htmlentities($result->athrid);?>"> <?php echo htmlentities($athrname=$result->AuthorName);?></option>
 <?php 
@@ -152,19 +152,19 @@ continue;
 
 <div class="col-md-6">
 <div class="form-group">
-<label>ISBN Number<span style="color:red;">*</span></label>
+<label>Numéro ISBN<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="isbn" value="<?php echo htmlentities($result->ISBNNumber);?>"  readonly />
-<p class="help-block">An ISBN is an International Standard Book Number.ISBN Must be unique</p>
+<p class="help-block">Un ISBN est un numéro international normalisé du livre. L'ISBN doit être unique.</p>
 </div></div>
 
 
 <div class="col-md-6">
  <div class="form-group">
- <label>Price in USD<span style="color:red;">*</span></label>
+ <label>Prix en FCFA<span style="color:red;">*</span></label>
  <input class="form-control" type="text" name="price" value="<?php echo htmlentities($result->BookPrice);?>"   required="required" />
  </div></div>
  <?php }} ?><div class="col-md-12">
-<button type="submit" name="update" class="btn btn-info">Update </button></div>
+<button type="submit" name="update" class="btn btn-info">Modifier </button></div>
 
                                     </form>
                             </div>
