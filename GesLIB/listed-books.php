@@ -18,7 +18,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System |  Issued Books</title>
+    <title>GesLib |  Livres Répertoriés</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -39,7 +39,7 @@ else{
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Issued Books</h4>
+                <h4 class="header-line">Liste des Livres Répertoriés</h4>
     </div>
     
 
@@ -48,7 +48,7 @@ else{
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                          Issued Books 
+                           Livres Répertoriés
                         </div>
                         <div class="panel-body">
                        
@@ -73,7 +73,7 @@ foreach($results as $result)
                                             <?php echo htmlentities($result->AuthorName);?><br />
                                             <?php echo htmlentities($result->ISBNNumber);?><br />
                                                 <?php if($result->isIssued=='1'): ?>
-<p style="color:red;">Book Already issued</p>
+<p style="color:red;">Livre déjà émis (emprunté)</p>
 <?php endif;?>
                             </div>
 
