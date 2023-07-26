@@ -28,7 +28,7 @@ header('location:manage-books.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Manage Books</title>
+    <title>GesLib | Gérer les Livres</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -49,7 +49,7 @@ header('location:manage-books.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Books</h4>
+                <h4 class="header-line">Gérer les Livres</h4>
     </div>
   
 
@@ -60,7 +60,7 @@ header('location:manage-books.php');
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           Books Listing
+                           Livres Répertoriés
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -68,12 +68,12 @@ header('location:manage-books.php');
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Book Name</th>
-                                            <th>Category</th>
-                                            <th>Author</th>
-                                            <th>ISBN</th>
-                                            <th>Price</th>
-                                            <th>Action</th>
+                                            <th>Nom du Livre</th>
+                                            <th>Catégorie</th>
+                                            <th>Auteur</th>
+                                            <th>Numéro ISBN</th>
+                                            <th>Prix</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -97,8 +97,8 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($result->BookPrice);?></td>
                                             <td class="center">
 
-                                            <a href="edit-book.php?bookid=<?php echo htmlentities($result->bookid);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
-                                          <a href="manage-books.php?del=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
+                                            <a href="edit-book.php?bookid=<?php echo htmlentities($result->bookid);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Éditer</button> 
+                                          <a href="manage-books.php?del=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Supprimer</button>
                                             </td>
                                         </tr>
  <?php $cnt=$cnt+1;}} ?>                                      

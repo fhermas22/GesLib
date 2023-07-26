@@ -28,7 +28,7 @@ header('location:manage-categories.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Manage Categories</title>
+    <title>GesLib | Gérer les Catégories</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -49,14 +49,14 @@ header('location:manage-categories.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Categories</h4>
+                <h4 class="header-line">Gérer les Catégories</h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
     {?>
 <div class="col-md-6">
 <div class="alert alert-danger" >
- <strong>Error :</strong> 
+ <strong>Erreur :</strong> 
  <?php echo htmlentities($_SESSION['error']);?>
 <?php echo htmlentities($_SESSION['error']="");?>
 </div>
@@ -66,7 +66,7 @@ header('location:manage-categories.php');
 {?>
 <div class="col-md-6">
 <div class="alert alert-success" >
- <strong>Success :</strong> 
+ <strong>Succès :</strong> 
  <?php echo htmlentities($_SESSION['msg']);?>
 <?php echo htmlentities($_SESSION['msg']="");?>
 </div>
@@ -104,7 +104,7 @@ header('location:manage-categories.php');
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           Categories Listing
+                           Catégories Répertoriés
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -112,11 +112,11 @@ header('location:manage-categories.php');
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Category</th>
-                                            <th>Status</th>
-                                            <th>Creation Date</th>
-                                            <th>Updation Date</th>
-                                            <th>Action</th>
+                                            <th>Categorie</th>
+                                            <th>Statut</th>
+                                            <th>Date de création</th>
+                                            <th>Date de mise à jour</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -133,16 +133,16 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($cnt);?></td>
                                             <td class="center"><?php echo htmlentities($result->CategoryName);?></td>
                                             <td class="center"><?php if($result->Status==1) {?>
-                                            <a href="#" class="btn btn-success btn-xs">Active</a>
+                                            <a href="#" class="btn btn-success btn-xs">Actif</a>
                                             <?php } else {?>
-                                            <a href="#" class="btn btn-danger btn-xs">Inactive</a>
+                                            <a href="#" class="btn btn-danger btn-xs">Inactif</a>
                                             <?php } ?></td>
                                             <td class="center"><?php echo htmlentities($result->CreationDate);?></td>
                                             <td class="center"><?php echo htmlentities($result->UpdationDate);?></td>
                                             <td class="center">
 
-                                            <a href="edit-category.php?catid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
-                                          <a href="manage-categories.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
+                                            <a href="edit-category.php?catid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Éditer</button> 
+                                          <a href="manage-categories.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Supprimer</button>
                                             </td>
                                         </tr>
  <?php $cnt=$cnt+1;}} ?>                                      

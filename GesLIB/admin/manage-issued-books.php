@@ -18,7 +18,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Manage Issued Books</title>
+    <title>GesLib | Gestion des Livres Émis</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -39,14 +39,14 @@ else{
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Issued Books</h4>
+                <h4 class="header-line">Gérer les Livres Émis</h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
     {?>
 <div class="col-md-6">
 <div class="alert alert-danger" >
- <strong>Error :</strong> 
+ <strong>Erreur :</strong> 
  <?php echo htmlentities($_SESSION['error']);?>
 <?php echo htmlentities($_SESSION['error']="");?>
 </div>
@@ -56,7 +56,7 @@ else{
 {?>
 <div class="col-md-6">
 <div class="alert alert-success" >
- <strong>Success :</strong> 
+ <strong>Succès :</strong> 
  <?php echo htmlentities($_SESSION['msg']);?>
 <?php echo htmlentities($_SESSION['msg']="");?>
 </div>
@@ -69,7 +69,7 @@ else{
     {?>
 <div class="col-md-6">
 <div class="alert alert-success" >
- <strong>Success :</strong> 
+ <strong>Succès :</strong> 
  <?php echo htmlentities($_SESSION['delmsg']);?>
 <?php echo htmlentities($_SESSION['delmsg']="");?>
 </div>
@@ -85,7 +85,7 @@ else{
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                          Issued Books 
+                          Livres Émis 
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -93,12 +93,12 @@ else{
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Student Name</th>
-                                            <th>Book Name</th>
-                                            <th>ISBN </th>
-                                            <th>Issued Date</th>
-                                            <th>Return Date</th>
-                                            <th>Action</th>
+                                            <th>Nom du Lecteur</th>
+                                            <th>Nom du Livre</th>
+                                            <th>Numéro ISBN </th>
+                                            <th>Date d'émission</th>
+                                            <th>Date de retour</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -128,7 +128,7 @@ foreach($results as $result)
                                             ?></td>
                                             <td class="center">
 
-                                            <a href="update-issue-bookdeails.php?rid=<?php echo htmlentities($result->rid);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
+                                            <a href="update-issue-bookdeails.php?rid=<?php echo htmlentities($result->rid);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Éditer</button> 
                                          
                                             </td>
                                         </tr>
