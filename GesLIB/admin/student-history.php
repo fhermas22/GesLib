@@ -45,7 +45,7 @@ header('location:reg-students.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | Student History</title>
+    <title>GesLib | Historique Lecteur</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -67,7 +67,7 @@ header('location:reg-students.php');
         <div class="row pad-botm">
             <div class="col-md-12">
                 <?php $sid=$_GET['stdid']; ?>
-                <h4 class="header-line">#<?php echo $sid;?> Book Issued History</h4>
+                <h4 class="header-line">#<?php echo $sid;?> Historique de Livres Émis</h4>
     </div>
 
 
@@ -78,7 +78,7 @@ header('location:reg-students.php');
                     <div class="panel panel-default">
                         <div class="panel-heading">
 
-<?php echo $sid;?> Details
+<?php echo $sid;?> Détails
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -86,12 +86,12 @@ header('location:reg-students.php');
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Student ID</th>
-                                            <th>Student Name</th>
-                                            <th>Issued Book  </th>
-                                            <th>Issued Date</th>
-                                            <th>Returned Date</th>
-                                            <th>Fine (if any)</th>
+                                            <th>ID Lecteur</th>
+                                            <th>Nom Lecteur</th>
+                                            <th>Livre Émis  </th>
+                                            <th>Date d'émission</th>
+                                            <th>Date de retour</th>
+                                            <th>Amende (dans le cas échéant)</th>
           
                                         </tr>
                                     </thead>

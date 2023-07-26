@@ -60,7 +60,7 @@ else{
                                             <th>Numéro ISBN </th>
                                             <th>Date d'émission</th>
                                             <th>Date de retour</th>
-                                            <th>Montant en (FCFA)</th>
+                                            <th>Amende en (FCFA)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
