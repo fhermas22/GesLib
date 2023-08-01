@@ -24,7 +24,7 @@ $query->bindParam(':author',$author,PDO::PARAM_STR);
 $query->bindParam(':price',$price,PDO::PARAM_STR);
 $query->bindParam(':bookid',$bookid,PDO::PARAM_STR);
 $query->execute();
-echo "<script>alert('Book info updated successfully');</script>";
+echo "<script>alert('Informations du livre modifiés avec succès !');</script>";
 echo "<script>window.location.href='manage-books.php'</script>";
 
 

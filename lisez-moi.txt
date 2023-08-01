@@ -1,3 +1,18 @@
+*** Projet de Gestion de Bibliothèque ***
+-----------------------------------------
+
+- FRANCISCO HERMAS
+
+- TCHABI I. ODILON
+
+- HABIBOU ALIDOU SAMS-DINE
+
+- KINIFO ODILON
+
+- AVLESSI SATURNIN
+
+-----------------------------------------
+
 # Comment exécuter ce projet de Système de Gestion de Bibliothèque
 
 1. Téléchargez et décompressez le fichier sur la bibliothèque de copie de votre système local.

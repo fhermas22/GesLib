@@ -20,12 +20,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="Brand Listed successfully";
+$_SESSION['msg']="Catégorie ajouté avec succès !";
 header('location:manage-categories.php');
 }
 else 
 {
-$_SESSION['error']="Something went wrong. Please try again";
+$_SESSION['error']="Oops...quelque chose s'est mal passé. Veuillez réessayer.";
 header('location:manage-categories.php');
 }
 
@@ -53,7 +53,7 @@ header('location:manage-categories.php');
       <!------MENU SECTION START-->
 <?php include('includes/header.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wra
+    <div class="content-wrapper">
     <div class="content-wrapper">
          <div class="container">
         <div class="row pad-botm">

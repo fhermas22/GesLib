@@ -17,7 +17,7 @@ $query = $dbh->prepare($sql);
 $query->bindParam(':author',$author,PDO::PARAM_STR);
 $query->bindParam(':athrid',$athrid,PDO::PARAM_STR);
 $query->execute();
-$_SESSION['updatemsg']="Author info updated successfully";
+$_SESSION['updatemsg']="Informations de l'auteur modifiés avec succès !";
 header('location:manage-authors.php');
 
 
@@ -57,7 +57,7 @@ header('location:manage-authors.php');
 
 </div>
 <div class="row">
-<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
+<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 <div class="panel panel-info">
 <div class="panel-heading">
 Informations Auteur

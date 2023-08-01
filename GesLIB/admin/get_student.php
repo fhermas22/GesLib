@@ -14,7 +14,7 @@ if($query -> rowCount() > 0)
 foreach ($results as $result) {
 if($result->Status==0)
 {
-echo "<span style='color:red'> Student ID Blocked </span>"."<br />";
+echo "<span style='color:red'> ID Lecteur Bloqué </span>"."<br />";
 echo "<b>Student Name-</b>" .$result->FullName;
  echo "<script>$('#submit').prop('disabled',true);</script>";
 } else {
@@ -31,7 +31,7 @@ echo htmlentities($result->MobileNumber);
 }
  else{
   
-  echo "<span style='color:red'> Invaid Student Id. Please Enter Valid Student id .</span>";
+  echo "<span style='color:red'> Id Lecteur invalide. Veuillez entrer un id Lecteur valide.</span>";
  echo "<script>$('#submit').prop('disabled',true);</script>";
 }
 }

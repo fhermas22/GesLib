@@ -23,12 +23,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="Book issued successfully";
+$_SESSION['msg']="Livre émis avec succès";
 header('location:manage-issued-books.php');
 }
 else 
 {
-$_SESSION['error']="Something went wrong. Please try again";
+$_SESSION['error']="Oops...quelque chose s'est mal passé. Veuillez réessayer.";
 header('location:manage-issued-books.php');
 }
 

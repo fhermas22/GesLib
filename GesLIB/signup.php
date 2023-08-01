@@ -30,11 +30,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo '<script>alert("Your Registration successfull and your student id is  "+"'.$StudentId.'")</script>';
+echo '<script>alert("Inscription réussie et votre id de lecteur est  "+"'.$StudentId.'")</script>';
 }
 else 
 {
-echo "<script>alert('Something went wrong. Please try again');</script>";
+echo "<script>alert('Oups...quelque chose s'est mal passé. Veuillez réessayer.');</script>";
 }
 }
 

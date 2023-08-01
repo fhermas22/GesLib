@@ -27,7 +27,7 @@ $imgnewname=md5($bookimg.time()).$extension;
 
 if(!in_array($extension,$allowed_extensions))
 {
-echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
+echo "<script>alert('Format Invalide. Uniquement jpg / jpeg/ png /gif sont les formats autorisés.');</script>";
 }
 else
 {
@@ -44,12 +44,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo "<script>alert('Book Listed successfully');</script>";
+echo "<script>alert('Livre ajouté avec succès !');</script>";
 echo "<script>window.location.href='manage-books.php'</script>";
 }
 else 
 {
-echo "<script>alert('Something went wrong. Please try again');</script>";    
+echo "<script>alert('Oops...quelque chose s'est mal passé. Veuillez réessayer.');</script>";    
 echo "<script>window.location.href='manage-books.php'</script>";
 }}
 }
